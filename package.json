@@ -1,17 +1,31 @@
 {
   "name": "jsonify-websocket",
   "version": "1.0.0",
-  "description": "",
+  "description": "Production-ready WebSocket server with Socket.IO and Express",
   "type": "module",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "websocket",
+    "socket.io",
+    "express",
+    "realtime"
+  ],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.21.0",
+    "helmet": "^7.1.0",
     "socket.io": "^4.8.3"
   }
 }
